@@ -61,12 +61,12 @@ if (process.stdin.isTTY) process.stdin.setRawMode(true);
 let currentWord = '';
 let fullSentence = '';
 
-console.log(`Loaded models from "${inputFile}".`);
-console.log('Type letters; space to validate word; Ctrl+C to exit.');
+console.log(`Modèles chargés depuis "${inputFile}".`);
+console.log('Tapez des lettres ; espace pour valider le mot ; Ctrl+C pour quitter.');
 
 process.stdin.on('keypress', (str, key) => {
     if (key.ctrl && key.name === 'c') {
-        console.log('\nFull sentence typed:', fullSentence.trim());
+        console.log('\nPhrase complète tapée :', fullSentence.trim());
         process.exit();
     }
 
