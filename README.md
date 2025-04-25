@@ -19,26 +19,6 @@ Projet réalisé par **Baptiste Pereira et Wajdi Lassoued**.
 
 
 
-```bash
-npm install ramda
-```
-
----
-
-## 🔄 Structure du projet
-
-```
-untitled/
-├── .idea/                  # Config WebStorm (inutile pour exécution)
-├── node_modules/           # Modules npm installés (ramda)
-├── base.txt                # Corpus d'apprentissage (ex : dialogues nettoyés)
-├── clavier_interacif.js    # Script principal du clavier prédictif
-├── package.json            # Fichier npm avec dépendances
-├── package-lock.json       # Verrouillage des dépendances
-└── .gitignore              # Fichiers/dossiers exclus du versionnage
-```
-
----
 
 ## 🚀 Lancement du programme
 
@@ -50,6 +30,7 @@ node clavier_interacif.js base.txt 5
 
 - **base.txt** : corpus d'apprentissage (modifiable).
 - **5** : ordre du modèle de Markov pour les **lettres** (tu peux ajuster ce chiffre).
+- Le lancement peux prendre quelques secondes.
 
 ---
 
@@ -92,22 +73,6 @@ Le fichier **base.txt** contient les **données textuelles** utilisées pour l'a
 
 Plus le corpus est riche et varié, plus les **suggestions seront pertinentes**.
 
----
 
-## 🔒 .gitignore
-
-Le fichier **.gitignore** exclut les dossiers/fichiers inutiles du versionnage Git :
-
-```
-node_modules/
-.idea/
-*.log
-```
-
-Cela garde le dépôt **propre et léger**.
-
----
-
-Besoin d'améliorations ou de nouvelles fonctionnalités ? N'hésite pas à proposer des idées ! 🚀
 
 
